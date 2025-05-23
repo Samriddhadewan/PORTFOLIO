@@ -2,7 +2,7 @@ import { useState } from "react";
 import { cn } from "../lib/utils";
 
 const skills = [
-  { name: "HTML/CSS", level: "85", category: "frontend" },
+  { name: "HTML", level: "85", category: "frontend" },
   { name: "Javascript", level: "75", category: "frontend" },
   { name: "React", level: "70", category: "frontend" },
   { name: "Typescript", level: "30", category: "frontend" },
