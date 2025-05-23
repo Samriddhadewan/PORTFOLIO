@@ -32,7 +32,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-25 px-4 z-50">
+    <section id="projects" className="py-25 px-4 ">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Feature <span className="text-primary">Projects</span>
@@ -46,7 +46,7 @@ const Projects = () => {
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover z-50"
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover "
             >
               <div className="h-48 overflow-hidden">
                 <img
