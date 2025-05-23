@@ -42,17 +42,20 @@ const ContactSection = () => {
     }).then((res) => res.json());
     if(res.success){
       form.reset();
-    }
-
-    console.log(res);
-    setTimeout(() => {
+      setIsSubmitting(false)
       toast({
         title: "Message Sent",
-        description:
-          "Thank you for sending message, I will get back to you very soon",
+        description: `${res.message}`,
       });
-      setIsSubmitting(false);
-    }, 1500);
+    }else{
+      setIsSubmitting(false)
+      toast({
+        title:"Message Sent Failed",
+        description:`${res.message}`
+      })
+    }
+
+      
   };
 
   return (
