@@ -16,10 +16,35 @@ const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const message = form.message.value;
+
+    const payload = {
+      access_key: import.meta.env.VITE_CONTACT_API,
+      name: name,
+      email: email,
+      message: message,
+    };
+
     setIsSubmitting(true);
 
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(payload),
+    }).then((res) => res.json());
+    if(res.success){
+      form.reset();
+    }
+
+    console.log(res);
     setTimeout(() => {
       toast({
         title: "Message Sent",
@@ -102,7 +127,10 @@ const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4">Connect with me</h4>
               <div className="flex space-x-4 justify-center">
-                <a target="_blank" href="https://www.linkedin.com/in/samriddhadewan/">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/samriddhadewan/"
+                >
                   {" "}
                   <Linkedin />{" "}
                 </a>
@@ -114,7 +142,10 @@ const ContactSection = () => {
                   {" "}
                   <Instagram />{" "}
                 </a>
-                <a target="_blank" href="https://www.facebook.com/samriddha.256945/">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/samriddha.256945/"
+                >
                   {" "}
                   <Facebook />{" "}
                 </a>
@@ -182,7 +213,7 @@ const ContactSection = () => {
                   "cosmic-button w-full flex items-center justify-center gap-2"
                 )}
               >
-                {isSubmitting? "Sending...":"Send Message"}
+                {isSubmitting ? "Sending..." : "Send Message"}
                 <Send size={20} />
               </button>
             </form>
