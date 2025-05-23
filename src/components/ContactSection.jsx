@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, PhoneCall, Twitch } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -22,6 +22,7 @@ const ContactSection = () => {
                 <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
 
                 <div className="space-y-6 justify-center">
+                    {/* email  */}
                     <div className="flex items-start space-x-4">
                         <div className="p-3 rounded-b-full pg-primary/30">
                         <Mail className="h-5 w-6 text-primary" />  
@@ -33,12 +34,56 @@ const ContactSection = () => {
                             </a>
                         </div>
                     </div>
+
+                    {/* phone  */}
+                     <div className="flex items-start space-x-4">
+                        <div className="p-3 rounded-b-full pg-primary/30">
+                        <PhoneCall className="h-5 w-6 text-primary" />  
+                        </div>
+                        <div>
+                            <h4 className="font-medium ">Phone</h4>
+                            <a className="text-muted-foreground hover:text-primary transition-colors" href="mailto:dewansamriddha@gmail.com">
+                                +880151861****
+                            </a>
+                        </div>
+                    </div>
+
+                    {/*  */}
+                         <div className="flex items-start space-x-4">
+                        <div className="p-3 rounded-b-full pg-primary/30">
+                        <MapPin className="h-5 w-6 text-primary" />  
+                        </div>
+                        <div>
+                            <h4 className="font-medium">Location</h4>
+                            <a className="text-muted-foreground hover:text-primary transition-colors" href="mailto:dewansamriddha@gmail.com">
+                                Rangamati,Bangladesh
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            
+            
+                {/* socials  */}
+            <div className="pt-8">
+                <h4 className="font-medium mb-4">Connect with me</h4>
+                <div className="flex space-x-4 justify-center">
+                    <a target="_blank" href=""> <Linkedin /> </a>
+                    <a target="_blank" href=""> <Twitch /> </a>
+                    <a target="_blank" href=""> <Instagram /> </a>
+                    <a target="_blank" href=""> <Facebook /> </a>
+                </div>
+            </div>
+            
+            
             </div>
 
 
 
+
             {/* form section here  */}
+            <div>
+vxcbgxcgbbg
+            </div>
         </div>  
       </div>
     </section>
