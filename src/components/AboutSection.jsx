@@ -12,8 +12,8 @@ const AboutSection = () => {
           {/* left one  */}
           <div className="space-y-6 ">
           <h3 className="text-2xl font-semibold">Passionate web developer</h3>
-          <p className="text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veniam officia odio, minus, quibusdam exercitationem quisquam, aspernatur enim doloribus reprehenderit in obcaecati incidunt numquam ullam.</p>
-          <p className="text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veniam officia odio, minus, quibusdam exercitationem quisquam, aspernatur enim doloribus reprehenderit in obcaecati incidunt numquam ullam.</p>
+          <p className="text-muted-foreground">I’m a passionate and self-motivated web developer with hands-on experience in building responsive and user-friendly websites using modern tools like React, Vite, Tailwind CSS, and Node.js. I enjoy turning complex problems into simple, clean, and efficient code.</p>
+          <p className="text-muted-foreground">I’ve built several full-stack projects that include authentication, API integration, CRUD operations, and database connectivity using MongoDB. My goal is to continue growing as a developer and build impactful applications that solve real-world problems.</p>
            <div className="flex flex-col sm:flex-row gap-5 pt-4 justify-center">
             <a href="#contact" className="cosmic-button">Get in Touch</a>
             <a href="#contact" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">Download CV</a>
