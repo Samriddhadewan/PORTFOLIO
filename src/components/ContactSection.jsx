@@ -102,7 +102,7 @@ const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4">Connect with me</h4>
               <div className="flex space-x-4 justify-center">
-                <a target="_blank" href="">
+                <a target="_blank" href="https://www.linkedin.com/in/samriddhadewan/">
                   {" "}
                   <Linkedin />{" "}
                 </a>
@@ -114,7 +114,7 @@ const ContactSection = () => {
                   {" "}
                   <Instagram />{" "}
                 </a>
-                <a target="_blank" href="">
+                <a target="_blank" href="https://www.facebook.com/samriddha.256945/">
                   {" "}
                   <Facebook />{" "}
                 </a>
