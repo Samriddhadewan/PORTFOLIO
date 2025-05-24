@@ -1,12 +1,42 @@
-# React + Vite
+# 🧑‍💻 Samriddha Dewan – Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the source code of my personal developer portfolio website. This project showcases my skills, experience, and projects as a web developer.
 
-Currently, two official plugins are available:
+🔗 **Live Site:** [samriddhadewan.netlify.app]([https://samriddhadewan.netlify.app](https://portfolio-samriddhas-projects-3b3758d3.vercel.app/?fbclid=IwY2xjawKdkNJleHRuA2FlbQIxMABicmlkETE2WE5GWkRtR0I1cmNVR2VWAR5oEIck1IePQqnqZnNanPaq4G6l_Y4aY8nx2zgJF2RC5yHq3CjXsXiWp_kQmA_aem_NNPvb5iBacHnW6ZlOexLXQ))
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework:** React.js (Vite)
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+
+---
+
+## 🚀 Features
+
+- 🧠 "About Me" section
+- 💼 Projects showcase with live links
+- 📞 Contact form(web3form integrated)
+- 🌙 Light & dark mode (if applicable)
+- 📱 Fully responsive on all devices
+
+---
+
+## 📦 Installation & Setup
+
+To run this project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/Samriddhadewan/PORTFOLIO.git
+
+# Navigate into the directory
+cd PORTFOLIO
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
