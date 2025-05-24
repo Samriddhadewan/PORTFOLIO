@@ -1,23 +1,25 @@
 import { useState } from "react";
 import { cn } from "../lib/utils";
+import { assets } from "../assets/asstes";
 
 const skills = [
-  { name: "HTML", level: "85", category: "frontend" },
-  { name: "Javascript", level: "75", category: "frontend" },
-  { name: "React", level: "70", category: "frontend" },
-  { name: "Typescript", level: "30", category: "frontend" },
-  { name: "Tailwind CSS", level: "80", category: "frontend" },
-  { name: "Next.js", level: "40", category: "frontend" },
+  { name: "HTML", level: "85", category: "frontend",logo: assets.html},
+  { name: "Javascript", level: "75", category: "frontend",logo:assets.javascript },
+  { name: "React", level: "70", category: "frontend", logo:assets.react },
+  { name: "Typescript", level: "30", category: "frontend", logo:assets.tailwind },
+  { name: "Tailwind CSS", level: "80", category: "frontend",logo:assets.typescript },
+  { name: "Next.js", level: "40", category: "frontend", logo:assets.nextjs },
+  { name: "Firebase", level: "70", category: "frontend", logo:assets.firebase },
 
   // backend
-  { name: "Node.js", level: "50", category: "backend" },
-  { name: "Express", level: "50", category: "backend" },
-  { name: "MongoDB", level: "50", category: "backend" },
+  { name: "Node.js", level: "50", category: "backend",logo:assets.node },
+  { name: "Express", level: "50", category: "backend",logo:assets.express },
+  { name: "MongoDB", level: "50", category: "backend",logo:assets.mongodb },
 
   // tools
-  { name: "Git/Github", level: "80", category: "tools" },
-  { name: "Figma", level: "70", category: "tools" },
-  { name: "Vs Code", level: "85", category: "tools" },
+  { name: "Git/Github", level: "80", category: "tools",logo:assets.github },
+  { name: "Figma", level: "70", category: "tools",logo:assets.figma },
+  { name: "Vs Code", level: "85", category: "tools",logo:assets.vscode },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -36,7 +38,6 @@ return (
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category, key) => (
             <button
-        
               onClick={() => setActiveCategory(category)}
               className={cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize cursor-pointer",
                 activeCategory === category ?"bg-primary text-primary-foreground" : "bg-secondary/70 text-foreground hover:bg-secondary" 
@@ -53,15 +54,18 @@ return (
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover
-                        "
+              className="bg-card p-6 rounded-lg flex gap-4  shadow-xs card-hover"
             >
-              <div className="text-left mb-4">
+              <div className="w-[20%]">
+                <img src={skill.logo} className="w-22 h-22 object-contain" alt="" />             
+              </div>
+              <div className="flex-1">
+                <div className="text-left  mb-4">
                 <h3 className="font-semibold text-lg">{skill.name}</h3>
               </div>
               <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
                 <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out"
+                  className="bg-primary  h-2 rounded-full origin-left animate-[grow_1.5s_ease-out"
                   style={{
                     width: skill.level + "%",
                   }}
@@ -71,6 +75,7 @@ return (
                 <span className="text-sm text-muted-foreground">
                   {skill.level}%
                 </span>
+              </div>
               </div>
             </div>
           ))}
