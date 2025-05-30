@@ -26,7 +26,7 @@ Welcome to the source code of my personal developer portfolio website. This proj
 
 ## 📦 Installation & Setup
 
-To run this project locally:
+To run this project locally
 
 ```bash
 # Clone the repository
