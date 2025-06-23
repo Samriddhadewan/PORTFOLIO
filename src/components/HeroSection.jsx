@@ -1,5 +1,5 @@
 import { ArrowBigDown, ArrowDown } from "lucide-react";
-import React from "react";
+import { assets } from "../assets/asstes";
 
 const HeroSection = () => {
   return (
@@ -7,7 +7,12 @@ const HeroSection = () => {
       id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center px-4"
     >
-      <div className="container max-w-4xl mx-auto z-10">
+      <div className="flex flex-col items-center justify-center md:flex-row w-full h-full">
+              <div className="container max-w-4xl mx-auto z-10">
+                {/* profile pic  */}
+            <div className=" my-8 mx-auto flex items-center justify-center">
+              <img src={assets.profile2} alt="" className="w-60 h-60 rounded-full object-cover border-4 border-primary shadow-lg" />
+            </div>
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
@@ -31,6 +36,7 @@ const HeroSection = () => {
               View My work
             </a>
           </div>
+        </div>
         </div>
       </div>
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">

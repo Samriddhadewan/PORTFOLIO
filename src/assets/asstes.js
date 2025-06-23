@@ -11,6 +11,8 @@ import github from "./github.png"
 import nextjs from "./nextJs.png"
 import vscode from "./vscode.png"
 import firebase from "./firebase.png"
+import profile from "./profile.jpg"
+import profile2 from "./profile2.jpg"
 
 export const assets = {
     html,
@@ -25,5 +27,8 @@ export const assets = {
     github,
     nextjs,
     vscode,
-    firebase
+    firebase,
+    profile,
+    profile2
+
 }
