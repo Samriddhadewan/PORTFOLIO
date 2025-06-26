@@ -12,12 +12,12 @@ const projects = [
   },
   {
     id: 1,
-    title: "E-COMMERCE website",
-    description: "A beautiful functional e-commerce website using MERN stack",
-    image: "/projects/Home.png",
+    title: "Quick Blog Website",
+    description: "A beautiful functional Blog website using MERN stack",
+    image: "/projects/blogwebsite.jpg",
     tags: ["React", "TailwindCSS", "NodeJS", "ExpressJS", "MongoDB"],
-    demoUrl: "https://ecommerce-frontend-rust-three.vercel.app/",
-    github: "https://github.com/Samriddhadewan/ECOMMERCE-app",
+    demoUrl: "https://quickblog-frontend.vercel.app/",
+    github: "https://github.com/Samriddhadewan/QUICKBLOG-APP",
   },
   {
     id: 1,
