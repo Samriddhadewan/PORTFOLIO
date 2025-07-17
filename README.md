@@ -1,6 +1,6 @@
 # 🧑‍💻 Samriddha Dewan – Portfolio Website
 
-Welcome to the source code of my personal developer portfolio website. This project showcases my skills, experience, and projects as a web developer..
+Welcome to the source code of my personal developer portfolio website. This project showcases my skills, experience, and projects as a web developer.
 
 🔗 **Live Site:** [samriddhadewan.dev]([https://samriddhadewan.netlify.app](https://portfolio-samriddhas-projects-3b3758d3.vercel.app/?fbclid=IwY2xjawKdkNJleHRuA2FlbQIxMABicmlkETE2WE5GWkRtR0I1cmNVR2VWAR5oEIck1IePQqnqZnNanPaq4G6l_Y4aY8nx2zgJF2RC5yHq3CjXsXiWp_kQmA_aem_NNPvb5iBacHnW6ZlOexLXQ))
 
