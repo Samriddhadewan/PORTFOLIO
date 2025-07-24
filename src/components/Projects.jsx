@@ -15,8 +15,8 @@ const projects = [
     title: "Quick Blog Website",
     description: "A beautiful functional Blog website using MERN stack",
     image: "/projects/blogwebsite.jpg",
-    tags: ["React", "TailwindCSS", "NodeJS", "ExpressJS", "MongoDB"],
-    demoUrl: "https://quickblog-frontend.vercel.app/",
+    tags: ["React", "TailwindCSS", "NodeJS", "ExpressJS", "MongoDB", "ImageKit", "Gemini AI"],
+    demoUrl: "https://quickblog-frontend-seven.vercel.app/",
     github: "https://github.com/Samriddhadewan/QUICKBLOG-APP",
   },
   {
