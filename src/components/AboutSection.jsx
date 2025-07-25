@@ -16,7 +16,9 @@ const AboutSection = () => {
           <p className="text-muted-foreground">I’ve built several full-stack projects that include authentication, API integration, CRUD operations, and database connectivity using MongoDB. My goal is to continue growing as a developer and build impactful applications that solve real-world problems.</p>
            <div className="flex flex-col sm:flex-row gap-5 pt-4 justify-center">
             <a href="#contact" className="cosmic-button">Get in Touch</a>
-            <a href="#contact" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">Download CV</a>
+            <a href="/Samriddha_resume.pdf"
+            download="Samriddha_resume.pdf"
+            className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">Download Resume</a>
           </div>
           </div>
           {/* right one  */}
